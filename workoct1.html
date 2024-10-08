@@ -4,6 +4,24 @@
 <title> "Virginia Hunt" </title>
 </head>
 <style>
+.aboutmetooltip {
+   position: relative;
+   display: inline-block}
+.aboutmetooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  text-align: center;
+  padding: 4px 0;
+  border-radius:5px; bottom: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -50px}
+  .aboutmetip:hover .tooltiptext {
+  visibility: visible;
+}
 a:hover, a:active {
   background-color: rgb(255, 0, 200);
 }
@@ -29,8 +47,8 @@ a:hover, a:active {
 <br>
 <br>
 <br>
-
-<div class="div1">
+<div class="div1 aboutmetooltip">
+   <span class="tooltiptext">About me</span>
    <ul>
       <li> <b>My name is Virginia Hunt
       <li>Northwestern University, Expected Graduation June 2026
